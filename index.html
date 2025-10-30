@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body style="background-color: beige;">
+    <header style="background-color: gray; color: white; text-align: center;">
+        <h1>Student Registration Form</h1>
+        <nav>
+            <a href="personal-information">Personal Information</a>
+            <span></span>
+            <a href="#">Academic Information</a>
+            <span></span>
+            <a href="#">Additional  Information</a>
+            <span></span>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <section id="personal-information"></section>
+            <fieldset style="padding: 40px;">
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name</label><br>
+                <input type="text" name="name" id="input-name" placeholder="Your Full Name" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" name="emial" id="input-email" placeholder="you@email.com"><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="input-password" placeholder="Your Password"><br><br>
+
+                <label for="date-of-birthday">Date Of Birthday</label><br>
+                <input type="date" name="date" id="input-date"><br><br>
+
+                <label for="gender">Gender</label><br>
+
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+                
+            </fieldset>
+        </form>
+                <form>
+            <section id="academic-information"></section>
+            <fieldset style="padding: 40px;">
+                <legend>Academic Information</legend>
+                <label for="major">Major</label><br>
+                <select name="major" id="hr-select">
+                    <option value="">Choose a Major</option>
+                    <option value="teknik-informatika">Teknik Informatika</option>
+                    <option value="teknik-informatika">Teknik Sipil</option>
+                    <option value="teknik-informatika">Teknik Mesin</option>
+                    <option value="teknik-informatika">Matematika</option>
+                </select><br><br>
+                <label for="leanguage">Leanguage</label><br>
+                <input type="checkbox" name="indonesia" id="indonesia" checked>
+                <label for="indonesia">Indonesia</label><br>
+                <input type="checkbox" name="English" id="English">
+                <label for="English">English</label><br>
+                <input type="checkbox" name="Mandarin" id="Mandarin">
+                <label for="Mandarin">Mandarin</label>
+            </fieldset>
+        </form>
+                <form>
+            <section id="additional-information"></section>
+            <fieldset style="padding: 40px;">
+                <legend>Additional Information</legend>
+                <label for="addres">Adress</label><br>
+                <textarea name="adress" id="adress" rows="7" cols="25" placeholder="Your address here..."></textarea><br><br>
+                <label for="bio">Bio</label><br>
+                <textarea name="bio" id="bio" rows="7" cols="25" placeholder="Tell us about yourself..."></textarea>
+            </fieldset><br>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </form>
+    </main>
+
+
+</body>
+</html>
